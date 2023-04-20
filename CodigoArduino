@@ -12,7 +12,7 @@
 // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
 #define OLED_RESET     -1      // Reset pin # (or -1 if sharing Arduino reset pin)
 //Adafruit_SSD1306 oled(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);   // device name is oled
-Adafruit_SH1106 oled(OLED_RESET);        // use this when SH1106
+Adafruit_SH1106 oled(OLED_RESET, 5, 6);        // use this when SH1106
 
 // Range name table (those are stored in flash memory)
 const char vRangeName[10][5] PROGMEM = {"A50V", "A 5V", " 50V", " 20V", " 10V", "  5V", "  2V", "  1V", "0.5V", "0.2V"}; // Vertical display character (number of characters including \ 0 is required)
